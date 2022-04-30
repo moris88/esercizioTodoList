@@ -1,0 +1,9 @@
+/node_modules
+package.json
+package-lock.json
+.eslintignore
+.eslintrc.json
+tsconfig.json
+README.md
+.prettierrc.json
+/.vscode

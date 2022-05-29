@@ -1,27 +1,12 @@
 import React from 'react'
+import '../App.css'
 import { Col, Row, Button } from 'react-bootstrap'
 import { Context } from '../context/useContext'
-import { Element } from '../types/element'
+import { Element } from '../types/global'
 
 export interface ItemProps {
   className?: string;
   item: Element;
-}
-
-const colorRed = {
-  color: 'red'
-}
-
-const colorGreen = {
-  color: 'green'
-}
-
-const divItem = {
-  backgroundColor: 'antiquewhite',
-  borderRadius: '15px',
-  marginTop: '5px',
-  paddingTop: '2px',
-  paddingBottom: '2px'
 }
 
 const Item: React.FC<ItemProps> = (props) => {
@@ -49,9 +34,9 @@ const Item: React.FC<ItemProps> = (props) => {
   }
 
   return (
-    <Row className={props.className ? props.className : ''} style={divItem}>
+    <Row className={props.className ? props.className + ' divItem' : 'divItem'}>
       <Col md={10}>
-        <p style={item.isDone ? colorGreen : colorRed}>
+        <p className={item.isDone ? "colorGreen": "colorRed"}>
           {item.isDone && (
             <span>
               <del>

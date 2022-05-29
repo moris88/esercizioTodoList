@@ -1,5 +1,5 @@
 import React from 'react'
-import { Element } from '../types/element'
+import { Element } from '../types/global'
 
 export interface StateReducer {
     items: Element[]

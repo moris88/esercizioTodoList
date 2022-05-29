@@ -1,16 +1,16 @@
-import * as React from 'react'
+import React from 'react'
 import { Row, Col } from 'react-bootstrap'
 import Item from './Item'
 import Input from './Input'
 import cls from 'classnames'
 import { Context } from '../context/useContext'
-import { Element } from '../types/element'
+import { Element } from '../types/global'
 
-export interface PropsList {
+export interface ItemsProps {
   className?: string;
 }
 
-const Items: React.FC<PropsList> = (props) => {
+const Items: React.FC<ItemsProps> = (props) => {
   const { state } = React.useContext(Context)
 
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import { InputGroup, FormControl, Button } from 'react-bootstrap'
 import { Context } from '../context/useContext'
-import { Element } from '../types/element'
+import { Element } from '../types/global'
 
 export interface InputItemProps {
   className?: string;
